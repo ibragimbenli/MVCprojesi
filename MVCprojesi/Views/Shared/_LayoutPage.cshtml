@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="~/images/icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="~/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/versions.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <link rel="stylesheet" href="~/css/custom.css">
+    <link href="~/Vendor/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/animate.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-touch-slider.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/colors.css" rel="stylesheet" />
+    <link href="~/css/flaticon.css" rel="stylesheet" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/css/pr_loading.css" rel="stylesheet" />
+    <link href="~/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/timeline.min.css" rel="stylesheet" />
+    <link href="~/css/versions.css" rel="stylesheet" />
+    <script src="~/Vendor/fontawesome/attribution.js"></script>
+    <style>
+        .opak{
+            opacity:0.4;
+            z-index:-1;
+        }
+    </style>
+    <script src="~/Vendor/fontawesome/js/all.min.js"></script>
+    <script src="~/Vendor/fontawesome/js/all.js"></script>
+    <script src="~/js/mapsed.js"></script>
+    <script src="~/js/modernizer.js"></script>
+</head>
+<body class="host_version">
+
+    @{ Html.RenderAction("Header", "home");}
+    @RenderBody()
+    @{ Html.RenderAction("Footer", "home");}
+    @{ Html.RenderAction("FooterBottom", "home");}
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius show" style="bottom: 10px;"><i class="fa fa-angle-up"></i></a>
+    <script src="~/js/all.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="~/js/timeline.min.js"></script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });</script>
+</body>
+</html>
